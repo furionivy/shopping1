@@ -1,0 +1,73 @@
+.dropdown>button:focus{
+    box-shadow: 0 0 0rem !important;
+}
+
+.btn-cart{
+    background-color: transparent;
+    position: relative;
+}
+.dropdown.btn-cart.badge{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+.dropdown-menu-right{
+    right: 0;
+    left: auto;
+}
+.jumbotron-bg{
+    background-image:url('https://images.unsplash.com/photo-1477901492169-d59e6428fc90?w=1350');
+    background-size: cover;
+
+    background-position: center center;
+
+    min-height: 400px;
+}
+.bg-lighter{
+    background-color: rgba(82, 72, 72, 0.65);
+}
+
+.box-shadow{
+    box-shadow: 0 3px 5px rgba(0, 0,0, .16);
+
+    transition: box-shadow .3s;
+}
+html{
+    font-size: 12px;
+}
+
+.navbar-var a{
+    color: rgb(252, 245, 252);
+}
+.navbar-var a:hover{
+    color: rgb(73, 71, 73);
+}
+.header-carousel-item{
+    height: 630px;
+}
+/*边线加粗*/
+.form-control{
+  border-width: 3px;
+}
+
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-caption {
+  
+    background-color:rgba(0, 0, 0, .6);
+}
+
+/*比较大的装置使用深色字小装置白色字*/
+@media(min-width:768px){
+  .text-md-dark{
+    color: #333;
+  }
+}
+body{
+    background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.vrhd8.com%2Fuploadfile%2F2017%2F0714%2F20170714052120672.jpg&refer=http%3A%2F%2Fwww.vrhd8.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626970926&t=f2675db33d6acaf0e6af5c7453cf75c3) no-repeat;
+    background-size:100%;
+    background-attachment:fixed;
+}

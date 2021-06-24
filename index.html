@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>香水杂货铺</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--顶部-->
+    <!--<nav class="navbar navbar-dark sticky-top" style="background-color: #778188;">-->
+    <nav class="navbar navbar-dark bg-dark sticky-top ">
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-heart text-info" aria-hidden="true"> </i>
+                perfume
+           
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-var d-flex">
+              <a class="nav-item nav-link active" href="index.html">首页</a><span class="sr-only">(current)</span>
+              <a class="nav-item nav-link" href="table.html">详情</a>
+              <a class="nav-item nav-link" href="houtai.html">列表</a>
+            </div>
+        </div>
+        <!--购物车内的数量（button 内包含icon，数量badge-->
+        <div class="dropdown ml-auto">
+            
+            <button class=" btn btn-sm btn-cart" type="button" id="dropdownMenuButton"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-shopping-cart text-light fa-2x" aria-hidden="true"></i>
+
+
+                <span class="badge badge-pill badge-danger">1</span>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right p-2" style="min-width: 300px;"
+                  aria-labelledby="dropdownMenuButton">
+                <table class="table table-sm">
+                    <h6 class="mb-3 pt-2">已选择商品</h6>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <a href="#removeModal" class="text-muted" data-toggle="modal" data-target="#removeModal"
+                                   data-title="删除 Blueberry 1件" data-backdrop="static">
+                              
+                                   <i class="far- fa-trash-alt" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td class="align-middle">Blueberry</td>
+                            <td class="align-middle">1件</td>
+                            <td class="align-middle text-right">$100.00</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+                <!--btn-block把按钮撑到100%-->
+                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#editModal" data-title=""
+                     data-backdrop="static">结账去</a>
+            </div>
+        </div>
+    </nav>
+
+
+<!--轮播-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item header-carousel-item bg-cover active" style="background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fuploads.rayli.com.cn%2F2019%2F1206%2F1575621688936.jpg&refer=http%3A%2F%2Fuploads.rayli.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626970777&t=1e04b3864ce7b2e0f0e30176ff3b01f8);">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h1>The Perfum Shop</h1>
+                    <p>I AN WHAT I LIVE.  所见所闻，皆是我</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.2008php.com%2F09_Website_appreciate%2F10-12-26%2F20101226001520.jpg&refer=http%3A%2F%2Fwww.2008php.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626970371&t=62034af1c655922dde6a09adacf5fb8f);">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h1>The Perfum Shop</h1>
+                    <p>经历，造就每一个我.</p>
+                   
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover" style="background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F010a925c207cdea80121df905529bc.jpg%402o.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626970507&t=fdc02277308850b7ac404493dacf3c66);">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h1>The Perfum Shop</h1>
+                    <p>前行，拓宽自我边际.</p>
+                    
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <!--按钮-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top">
+                    <a href="#pane-1" class="list-group-item list-group-item-action list-group-item-dark active" data-toggle="list">
+                        <i class="fab fa-old-republic mr-2"></i>Hot products
+                    </a>
+                    <a href="#pane-2" class="list-group-item list-group-item-action list-group-item-dark" data-toggle="list">
+                        <i class="fas fa-gift mr-2"></i> New products
+                    </a>
+                    <!--<a href="#" class="list-group-item list-group-item-action">
+                        <i class="fas fa-rainbow mr-2"></i> Best sellers
+                    </a>-->
+                  
+
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <!--pane-1-->
+                    <div class="tab-pane active" id="pane-1">
+                        <!--<form class="form-inline my-2 my-lg-0">
+                            <input class="form-control col-md-4 col-9 rounded-0" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-warning my-2 my-sm-0 rounded-0" type="submit">Search</button>
+                        </form>-->
+                        <div class="row mt-2 mt-md-4 mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <!--box-shadow阴影效果css-->
+                                    <!--border-0移除线条-->
+                                    <img class="card-img-top"
+                                        src="https://img0.baidu.com/it/u=1654551528,2400175119&fm=15&fmt=auto&gp=0.jpg"
+                                        alt="Card imge cap">
+                                        
+                                    <div class="card-body">
+                                        <h5 class="card-title">VAERSACE</h5>
+                                        <p class="card-text">VERSACE范思哲女士清新木质香调淡香水大牌正品中性香氛</p>
+
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <!--border-top-0上面线条移除-->
+                                        <!--bg-white底色白色-->
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secoundary">50ML</a>
+                                            <a href="#" class="btn btn-outline-secoundary disabled">30ML</a>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                   
+                                        <img class="card-img-top"
+                                         src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Ffashionsue.cn%2Fimages%2F201403%2Fgoods_img%2F2189_P_13937686057160.jpg&refer=http%3A%2F%2Ffashionsue.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627042932&t=bc944bcdd646fccf2bfedda7aeea7406"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ESTEE LAUDER</h5>
+                                        <p class="card-text">雅诗兰黛欢沁女士淡香水欢沁馥郁EDP30清新自信淡香熏</p>
+                                        
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-secoundary">50ML</a>
+                                            <a href="#" class="btn btn-outline-secoundary disabled">30ML</a>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <!--zhaopian-->
+                                    <img class="card-img-top"
+                                         src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg11.360buyimg.com%2Fn1%2Fjfs%2Ft5944%2F30%2F1192865387%2F76270%2F83cd4573%2F592fce2aNd26b6538.jpg&refer=http%3A%2F%2Fimg11.360buyimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626708988&t=b8e9bdba3b0e812bc02f2bc5595817de"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">BURBERRY</h5>
+                                        <p class="card-text">BURBERRY博柏利红粉恋歌女士淡香水 持久清新花果香少女大牌正品</p>
+                                        
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        
+                                        <a href="#" class="btn btn-outline-secoundary">50ML</a>
+                                            <a href="#" class="btn btn-outline-secoundary disabled">30ML</a>
+                                            <a href="#" class="btn btn-outline-secoundary disabled">5ML</a>
+                                            
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <!--zhaopian-->
+                                    <img class="card-img-top"
+                                         src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimgx.xiawu.com%2Fxzimg%2Fi4%2Fi1%2F35185325%2FTB2njdvopXXXXXZXXXXXXXXXXXX_%21%2135185325.jpg&refer=http%3A%2F%2Fimgx.xiawu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626709939&t=be43f2a23c3a49431a01e8cf05c3fdbc"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CHANEL</h5>
+                                        <p class="card-text">CHANEL 香奈儿邂逅系列发香雾 chance 发香喷雾</p>
+                                        
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        
+                                        <a href="#" class="btn btn-outline-secoundary">50ML</a>
+                                            <a href="#" class="btn btn-outline-secoundary disabled">10ML</a>
+                                            
+                                            
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <!--zhaopian-->
+                                    <img class="card-img-top"
+                                        src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg3.tbcdn.cn%2Ftfscom%2Fi2%2F1706787496%2FTB28vUSpFXXXXa0XXXXXXXXXXXX_%21%211706787496.jpg&refer=http%3A%2F%2Fimg3.tbcdn.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626710495&t=4e4771ff0e5d926a56789f08c6bcce17"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Calvin Klein</h5>
+                                        <p class="card-text">Calvin Klein 卡尔文克雷恩 CK one be卡雷优中性淡香水 小众香</p>
+                                        
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        
+                                        <a href="#" class="btn btn-outline-secoundary btn-block disabled">缺货中</a>
+                                            
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--pane-2-->
+                    <div class="tab-pane" id="pane-2">
+                        <div class="row mb-4">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                         src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fcimgs1.fenqile.com%2Fproduct%2FM00%2FD5%2F8C%2FhhoGAFpYnuqADjt1AAT1krWLAX8336_800x800.jpg&refer=http%3A%2F%2Fcimgs1.fenqile.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626710222&t=528c4c5b620b63318d820f10f7205715"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">JO MALONE</h5>
+                                        <p class="card-text">祖玛珑蓝风铃香水 女士淡香 Jo Malone London</p>
+                                        
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">  
+                                        <a href="#" class="btn btn-outline-secoundary">50ML</a>
+                                        <a href="#" class="btn btn-outline-secoundary disabled">30ML</a>
+                                        <a href="#" class="btn btn-outline-secoundary disabled">5ML</a>
+                                                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 text-center h-100">
+                                    <img class="card-img-top"
+                                         src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.alicdn.com%2Fbao%2Fuploaded%2Fi1%2F3626596873%2FO1CN01lEXQjA20dsku4BCEs_%21%213626596873-0-lubanu-s.jpg&refer=http%3A%2F%2Fimg.alicdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626713137&t=fca4bc1237eaafb4e4f16aad14195e24"
+                                        alt="Card imge cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">YSL</h5>
+                                        <p class="card-text">YSL圣罗兰LIBRE自由之水刚柔并济个性女士香水</p>
+                                        
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">  
+                                        <a href="#" class="btn btn-outline-secoundary">50ML</a>
+                                        <a href="#" class="btn btn-outline-secoundary disabled">30ML</a>
+                                        <a href="#" class="btn btn-outline-secoundary disabled">5ML</a>
+                                                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+        <footer class="bg-light text-muted py-3">
+            <div class="container">
+                <ul class="list-inline-item">
+                    <li class="list-inline-item">@Copright 2021 香水杂货铺</li>
+                    <li class="list-inline-item">
+                        <a class="text-info" href="#">
+                            <i class="fab fa-instagram-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-info" href="#">
+                            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-info" href="#">About</a>
+                    </li>     
+                </ul>
+                <!--<p class="text-center">Made with Bootstrap4</p>-->
+            </div>
+        </footer>
+
+        <!--editModal-->
+        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+            aria-hidden="true">
+
+            <div class="modal-dialog" role="document">
+                <div class="modal-cotent">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="editModalLabel">登入购买</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control mb-3" placeholder="请输入Email">
+                                <label for="password">密码</label>
+                                <input type="password" class="form-control mb-3" placeholder="请输入密码">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">记住账号</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary">登入</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--removeModal-->
+        <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-danger">
+                        <h5 class="modal-title text-white" id="removeModalLabel">确认</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th width="30"></th>
+                                    <th width="100"></th>
+                                    <th>商品名称</th>
+                                    <th width="100"></th>
+                                    <th width="80"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align-middle text-center"></td>
+                                    <td class="py-1" width="130">
+                                        <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg11.360buyimg.com%2Fn1%2Fjfs%2Ft5944%2F30%2F1192865387%2F76270%2F83cd4573%2F592fce2aNd26b6538.jpg&refer=http%3A%2F%2Fimg11.360buyimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626708988&t=b8e9bdba3b0e812bc02f2bc5595817de" class="img-thimbnail"alt="">
+                                    </td>
+                                    <td class="align-middle">BURBERRY</td>
+                                    <td class="align-middle">1件</td>
+                                    <td class="align-middle text-right">$100</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="text-right">运费</td>
+                                    <td class="text-right">
+                                        <strong>$10</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="text-right">合计</td>
+                                    <td class="text-right">
+                                        <strong>￥110</strong>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-secondary">登入</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--<nav aria-label="Page navigation example">
+            <ul class="pagination d-flex justify-content-center mb-5">
+                <li class="page-item disable"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            
+
+            </ul>
+        </nav>-->
+    </div>
+
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/all.js"></script>
+</body>
+
+</html>

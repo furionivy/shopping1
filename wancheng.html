@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>香水杂货铺--订单</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+     
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-heart text-info" aria-hidden="true"> </i>
+                perfume
+           
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-var d-flex">
+              <a class="nav-item nav-link active" href="index.html">首页</a><span class="sr-only">(current)</span>
+              <a class="nav-item nav-link" href="table.html">详情</a>
+              <a class="nav-item nav-link" href="houtai.html">列表</a>
+            </div>
+        </div>
+        
+    </nav>
+
+<!--结账完成页面-->
+<div class="container py-5">
+    <div class="row justify-content-center ">
+        <div class="col-md-8  bg-lighter">
+            <h2 class="text-center text-white mb-3">结账完成</h2>
+            <div class="alert alert-success text-center alert-sounded" role="alert">
+                完成
+            </div>
+            <h3 class="text-center text-white mb-3">购买信息</h3>
+            <table class="table text-white">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th width="200">商品名称</th>
+                        <th width="150">数量</th>
+                        <th width="120">小计</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-1" width="140">
+                            <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg11.360buyimg.com%2Fn1%2Fjfs%2Ft5944%2F30%2F1192865387%2F76270%2F83cd4573%2F592fce2aNd26b6538.jpg&refer=http%3A%2F%2Fimg11.360buyimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626708988&t=b8e9bdba3b0e812bc02f2bc5595817de" class="img-thimbnail"  width="110" alt="">
+                        </td>
+                        <td class="align-middle">BURBERRY</td>
+                        <td class="align-middle">1件</td>
+                        <td class="align-middle text-right">$100</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="align-middle text-right">运费</td>
+                        <th class="align-middle text-right">$10</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="align-middle text-right">合计</td>
+                        <th class="align-middle text-right">$110</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <h3 class="text-center text-white mb-4">个人资料</h3>
+            <table class="table text-white">
+                <tbody>
+                    <tr>
+                        <th>Email</th>
+                        <td>843753889@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>姓名</th>
+                        <td>Ivy</td>
+                    </tr>
+                    <tr>
+                        <th>电话</th>
+                        <td>13538681073</td>
+                    </tr>
+                    <tr>
+                        <th>地址</th>
+                        <td>广东省东莞市东莞理工学院</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+            
+    
+            <!--removeModal-->
+            <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger">
+                            <h5 class="modal-title text-white" id="removeModalLabel">确认</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th width="30"></th>
+                                        <th width="100"></th>
+                                        <th>商品名称</th>
+                                        <th width="100"></th>
+                                        <th width="80"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle text-center"></td>
+                                        <td class="py-1" width="130">
+                                            <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg11.360buyimg.com%2Fn1%2Fjfs%2Ft5944%2F30%2F1192865387%2F76270%2F83cd4573%2F592fce2aNd26b6538.jpg&refer=http%3A%2F%2Fimg11.360buyimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626708988&t=b8e9bdba3b0e812bc02f2bc5595817de" class="img-thimbnail"alt="">
+                                        </td>
+                                        <td class="align-middle">BURBERRY</td>
+                                        <td class="align-middle">1件</td>
+                                        <td class="align-middle text-right">$100</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="text-right">运费</td>
+                                        <td class="text-right">
+                                            <strong>$10</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="text-right">合计</td>
+                                        <td class="text-right">
+                                            <strong>￥110</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary">登入</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!--<nav aria-label="Page navigation example">
+                <ul class="pagination d-flex justify-content-center mb-5">
+                    <li class="page-item disable"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                
+    
+                </ul>
+            </nav>-->
+        </div>
+    
+    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    
+        <script src="js/all.js"></script>
+
+
+
+
+  
+    
+
+</body>
+
+</html>

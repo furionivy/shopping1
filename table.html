@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>香水杂货铺--详情页</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+     
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-heart text-info" aria-hidden="true"> </i>
+                perfume
+           
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-var d-flex">
+              <a class="nav-item nav-link active" href="index.html">首页</a><span class="sr-only">(current)</span>
+              <a class="nav-item nav-link" href="table.html">详情</a>
+              <a class="nav-item nav-link" href="houtai.html">列表</a>
+            </div>
+        </div>
+        <!--购物车内的数量（button 内包含icon，数量badge-->
+        <div class="dropdown ml-auto">
+            
+            <button class=" btn btn-sm btn-cart" type="button" id="dropdownMenuButton"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <i class="fa fa-shopping-cart text-light fa-2x" aria-hidden="true"></i>
+
+                <span class="badge badge-pill badge-danger">1</span>
+            </button>
+
+            <div class="dropdown-menu dropdown-menu-right p-2" style="min-width: 300px;"
+                  aria-labelledby="dropdownMenuButton">
+                <table class="table table-sm">
+                    <h6 class="mb-3 pt-2">已选择商品</h6>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle text-center">
+                                <a href="#removeModal" class="text-muted" data-toggle="modal" data-target="#removeModal"
+                                   data-title="删除 Blueberry 1件" data-backdrop="static">
+                              
+                                   <i class="far- fa-trash-alt" aria-hidden="true"></i>
+                                </a>
+                            </td>
+                            <td class="align-middle">Blueberry</td>
+                            <td class="align-middle">1件</td>
+                            <td class="align-middle text-right">$100.00</td>
+                        </tr>
+                      
+                    </tbody>
+                </table>
+                <!--btn-block把按钮撑到100%-->
+                <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#editModal" data-title=""
+                     data-backdrop="static">结账去</a>
+            </div>
+        </div>
+    </nav>
+<!--打折框-->
+    
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <!--bg-transparent可以移除背景色-->
+                <ol class="breadcrumb bg-transparent pl-0">
+                    <li class="breadcrumb-item"><a href="#">HOME</a></li>
+                    <li class="breadcrumb-item"><a href="#">Hot products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">BURBERRY</li>
+                </ol>
+            </nav>
+           
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <!--sticy-top固定-->
+                    <div class="sticy-top" style="top:10px;">
+                        <div class="d-flex">
+                            <h1 class="h2">Hot products</h1>
+                            <span class="h4 text-secondary pt-2 ml-2">(BURBERRY）</span>
+                        </div>
+                        <!--justify-content-end align-items-end 让售价可以靠右边并且对其底部-->
+                        <div class="d-flex justify-content-end align-items-end">
+                            <del class="text-muted">售价 $120.00</del>
+                            <!--h3样式边打网文字 ml-auto 会有弹性的伸缩 mb-0对齐在同一条底线 text-danger强调文字颜色变红色-->
+                            <div class="h3 ml-auto mb-0 text-danger">
+                                <small>618折扣价 NT$</small>
+                                <strong>$100.00</strong>
+                
+                
+                            </div>
+                        </div>
+                        <hr>尺寸：
+                
+                        <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-secondary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked>50ML
+                            </label>
+                            <!--disabled可以关闭不可以选择-->
+                            <label class="btn btn-outline-secondary disable">
+                                <input type="radio" name="options" id="option2" autocomplete="off" disabled>30ML
+                            </label>
+                            <label class="btn btn-outline-secondary ">
+                                <input type="radio" name="options" id="option3" autocomplete="off">10ML
+                            </label>
+                            
+                        </div> 
+                
+                        <div class="input-group mt-3">
+                            <select name="" id="number" class="form-control mr-1">
+                                <option value="1">1件</option>
+                                <option value="2">2件</option>
+                                <option value="3">3件</option>
+                            </select>
+                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#editModal">加入购物车</a>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    
+    
+    
+                    <div class="col-md-8">
+                        <h1>红粉恋歌女士淡香水</h1>
+                        <br>
+                        <p class="mb-5">充满活泼俏皮，香氛展现了无尽的青春气息，这是一支轻松自在又充满愉悦的香氛</p>
+                        
+                        <!--<img src="" class="w-100" alt="">-->
+        
+                        
+                        <img src="https://wx4.sinaimg.cn/large/bbe7de7cgy1grs7i1beepj20ly12sdmm.jpg" class="w-110" alt="">
+        
+                       
+                        <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic12.secooimg.com%2Fimgextra%2F2019%2F0801%2F92bf22f9e52f471cae9e251e1322bd36.jpg&refer=http%3A%2F%2Fpic12.secooimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626712964&t=1f4839d72c3f9719189ea9eabc7763ed" class="w-99" alt="">
+                        
+                    </div>
+                    <br>
+                    
+                    
+    
+    
+                  
+                    <div class="col-md-12">
+                        <div class="card-columns">
+                            <div class="card">
+                                <img class="card-img-top" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhimg2.huanqiucdn.cn%2Fattachment2010%2F2013%2F0401%2F20130401092031379.jpg&refer=http%3A%2F%2Fhimg2.huanqiucdn.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626970615&t=8c30c996aa45e076795aa70e1512743f" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title ">红粉恋歌女士淡香水</h5>
+                                    <p class="card-text">充满活泼俏皮，香氛展现了无尽的青春气息，这是一支轻松自在又充满愉悦的香氛</p>
+                                </div>
+                            </div>
+                            <div class="card p-3">
+                                <blockquote class="blockquote mb-0 card-body">
+                                    <p>奢享挚爱 芬芳蔓延</p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                            查看更多 <cite title="perfume"></cite>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="card">
+                              <img class="card-img-top" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fnowre.com%2Fwp-content%2Fuploads%2F2017%2F08%2F1501748035335914.jpg&refer=http%3A%2F%2Fnowre.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626970988&t=d3afd57af7349e2d73cff05b9ff383c5" alt="">
+                              <div class="card-body">
+                                <h5 class="card-title">更多推荐</h5>
+                                <p class="card-text">玩味专属趣致香氛</p>
+                                <p class="card-text"><small class="text-muted">查看更多</small></p>
+                              </div>
+                            </div>
+                            <div class="card bg-light text-dark text-center p-3">
+                              <blockquote class="blockquote mb-0">
+                                <p>花果馥郁香调</p>
+                                <footer class="blockquote-footer">
+                                  <small>
+                                    Someone famous in <cite title="Source Title">Source Title1</cite>
+                                  </small>
+                                </footer>
+                              </blockquote>
+                            </div>
+                            
+                            <div class="card">
+                              <img class="card-img" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F0297709086f3a513e591bd81d928c99ef7c0602c4e010-g6N9d0_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626970900&t=8f82334921aedf12e3dbcc954800c331" alt="">
+                            </div>
+                            <div class="card p-3 text-center">
+                              <blockquote class="blockquote mb-0">
+                                <p>出发，邂逅远方世界</p>
+                                <footer class="blockquote-footer">
+                                  <small class="text-muted">
+                                    Someone famous in <cite title="Source Title">Source Title2</cite>
+                                  </small>
+                                </footer>
+                              </blockquote>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                  
+                                  <p class="card-text">I AM WHAT I LIVE</p>
+                                  <p class="card-text"><small class="text-muted">查看更多</small></p>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>    
+                    <div class="text-right">
+                        <a href="dingdan.html">
+                            <button type="button" class="btn btn-dark btn-lg">清空购物车</button>
+                        </a>
+                    </div>
+
+                </div>
+                    
+            </div>
+
+                
+                
+
+      
+    
+    
+        
+           
+            
+            <footer class="bg-light text-muted py-3">
+                <div class="container">
+                    <ul class="list-inline-item">
+                        <li class="list-inline-item">@Copright 2021 香水杂货铺</li>
+                        <li class="list-inline-item">
+                            <a class="text-info" href="#">
+                                <i class="fab fa-instagram-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-info" href="#">
+                                <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-info" href="#">About</a>
+                        </li>     
+                    </ul>
+                    
+                </div>
+            </footer>
+    
+            <!--editModal-->
+            <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+                aria-hidden="true">
+    
+                <div class="modal-dialog" role="document">
+                    <div class="modal-cotent">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title" id="editModalLabel">登入购买</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control mb-3" placeholder="请输入Email">
+                                    <label for="password">密码</label>
+                                    <input type="password" class="form-control mb-3" placeholder="请输入密码">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">记住账号</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary">登入</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!--removeModal-->
+            <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger">
+                            <h5 class="modal-title text-white" id="removeModalLabel">确认</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th width="30"></th>
+                                        <th width="100"></th>
+                                        <th>商品名称</th>
+                                        <th width="100"></th>
+                                        <th width="80"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle text-center"></td>
+                                        <td class="py-1" width="130">
+                                            <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg11.360buyimg.com%2Fn1%2Fjfs%2Ft5944%2F30%2F1192865387%2F76270%2F83cd4573%2F592fce2aNd26b6538.jpg&refer=http%3A%2F%2Fimg11.360buyimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1626708988&t=b8e9bdba3b0e812bc02f2bc5595817de" class="img-thimbnail"alt="">
+                                        </td>
+                                        <td class="align-middle">BURBERRY</td>
+                                        <td class="align-middle">1件</td>
+                                        <td class="align-middle text-right">$100</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="text-right">运费</td>
+                                        <td class="text-right">
+                                            <strong>$10</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="text-right">合计</td>
+                                        <td class="text-right">
+                                            <strong>￥110</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary">登入</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+           <!--<nav aria-label="Page navigation example">
+                <ul class="pagination d-flex justify-content-center mb-5">
+                    <li class="page-item disable"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                
+    
+                </ul>
+            </nav>-->
+        </div>
+    
+    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    
+        <script src="js/all.js"></script>
+
+
+
+
+  
+    
+
+</body>
+
+</html>
